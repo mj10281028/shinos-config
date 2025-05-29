@@ -1,0 +1,7 @@
+@import "style_1.rasi"
+
+configuration {
+  modi: "drun,run";
+  show-icons: true;
+  icon-theme: "Papirus";
+}
