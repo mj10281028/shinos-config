@@ -57,5 +57,8 @@ flatpak install -y flathub io.gitlab.librewolf-community
 # --- 8. Forcer démarrage en graphique
 sudo raspi-config nonint do_boot_behaviour B3
 
+# --- 9. Forcer i3 comme session par défaut dans LightDM
+echo -e "[User]\nXSession=i3" | sudo tee /var/lib/AccountsService/users/$USER > /dev/null
+
 # --- Fin ---
 echo "Installation terminée ! Redémarrez le système pour appliquer toutes les modifications."
